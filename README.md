@@ -48,9 +48,9 @@ Output of a failed assertion looks like this:
 ```
 Assertion failed in Thread: "main"
 I am an assertion and you failed me.
-Test.Test.one(Test.java:67)
-Test.Test.two(Test.java:59)
-Test.Test.three(Test.java:55)
+package.Test.one(Test.java:67)
+package.Test.two(Test.java:59)
+package.Test.three(Test.java:55)
 ```
 
 Note that it also creates a log file in your working directory with a timestamp and ALL output, even output not important enought to be displayed in the terminal, just in case.
