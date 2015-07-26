@@ -38,9 +38,9 @@ AppTester.printEx("This is an exception", new Exception("Hi"));
 
 * #4. With java assertions, the application keeps running even if there is something horribly wrong with it that needs immediate fixing because Java assertions only kill the thread, not the JVM. AppTester assertions are nicely formatted to your specified number of stack trace elements in the terminal (the rest are in the log file) and they kill the entire application, not just the thread.
 ```
-// only display three rows of stack trace.
+// Only display three rows of stack trace.
 AppTester.setNumberOfRowsIDisplayInStackTraces_(3); 
-// The above line is an assertion that will terminate the application if failed.
+// This assertion will fail.
 AppTester.check(true == false, "I am an assertion and you failed me.");
 ```
 
